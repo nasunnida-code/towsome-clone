@@ -1,0 +1,101 @@
+/* 기본설정 */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Apple SD Gothic Neo', sans-serif; background-color: #f8f8f8; }
+
+.header{
+    /* position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 430px;
+    height: 56px;
+    background: white;z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px; */
+    display: flex;
+    justify-content: space-between; /* 양 끝 정렬 */
+    align-items: center;            /* 세로 중앙 정렬 */
+    padding: 15px;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 16px;
+    color: black;
+}
+
+/* 메인 배너 */
+.main-banner{
+    width: 100%;
+    height: 300px;
+    background: #e0e0e0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+/* css grid 퀵 메뉴(4개 아이템 가로 배치) */
+.quick-menu{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.menu-item span{
+    font-size: 24px;
+    display: block;
+    margin-bottom: 5px;
+}
+.menu-item p{
+    font-size: 12px;
+}
+
+/* css grid 상품리스트(2열 배치) */
+.product-section{
+    padding: 20px;
+}
+.section-title{
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+product-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+}
+product-card{
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.img-placeholder{
+    width: 100%;
+    aspect-ratio: 1 /1;
+    background: #eee;
+    margin-bottom: 8px;
+}
+.name{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+
+.quick-menu{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+
+}
