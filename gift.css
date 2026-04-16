@@ -1,0 +1,65 @@
+header {
+  display: flex;
+  justify-content: space-between; /* 요소들 사이에 동일한 간격 배치 */
+  align-items: center; /* 세로축 중앙 정렬 */
+  padding: 10px 15px;
+  background-color: #ffffff; /* 배경색 */
+  border-bottom: 1px solid #eee; /* 하단 구분선 */
+}
+
+h1 {
+  font-size: 1.2rem;
+  margin: 0;
+  flex-grow: 1; /* 제목이 남는 공간을 차지하게 함 */
+  text-align: center; /* 제목 글자를 중앙으로 */
+}
+
+button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 5px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff; /* 배경색 */
+  border-bottom: 1px solid #eee; /* 하단 구분선 */
+  height: 50px; /* 네비바 높이 */
+}
+.tab {
+  flex: 1; /* 핵심: 자식 요소들이 공간을 똑같이 나눠 가짐 */
+  text-align: center; /* 글자를 각 칸의 중앙으로 */
+  font-size: 14px; /* 글자 크기 (적정 사이즈) */
+  font-weight: 500; /* 글자 두께 */
+  color: #333; /* 글자 색상 */
+  cursor: pointer; /* 마우스 오버 시 손가락 모양 */
+}
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 가로 4등분 */
+  width: 100%;
+  max-width: 600px; /* 모바일 적정 너비 */
+  margin: 0 auto;
+  border-top: 1px solid #eee; /* 맨 위 테두리 */
+}
+
+.category-item {
+  display: flex;
+  flex-direction: column; /* 아이콘과 글자를 위아래로 */
+  align-items: center; /* 가로 중앙 */
+  justify-content: center; /* 세로 중앙 */
+  padding: 20px 0;
+  border-right: 1px solid #eee; /* 오른쪽 테두리 */
+  border-bottom: 1px solid #eee; /* 아래쪽 테두리 */
+  background-color: #fff;
+  cursor: pointer;
+}
+.img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
